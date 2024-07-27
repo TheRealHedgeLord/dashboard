@@ -1,13 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="bg-gray-600">
+      <nav class="flex max-w-8xl items-center justify-between p-2 lg:px-1">
+        <h1 class="text-white text-2xl font-bold underline">
+          Portfolio Dashboard
+        </h1>
+        <button
+          class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-1 px-4 border border-gray-400 rounded shadow"
+        >Connect Wallet</button>
+      </nav>
+    </header>
+    <div class="flex">
+      <div class="w-1/3 bg-white mx-4 mt-4 mb-2 max-w-8xl p-4 rounded overflow-hidden shadow-lg">
+        <p class="justify-between">This is the portfolio overview</p>
+      </div>
+      <div class="w-2/3">
+        <div class="bg-white mx-4 mt-4 mb-2 max-w-8xl p-4 rounded overflow-hidden shadow-lg">
+          <p class="justify-between">this is the balance line chart</p>
+        </div>
+        <div class="bg-white mx-4 mt-4 mb-2 max-w-8xl p-4 rounded overflow-hidden shadow-lg">
+          <p class="justify-between">this is the token exposure pie chart</p>
+        </div>
+        <div class="bg-white mx-4 mt-4 mb-2 max-w-8xl p-4 rounded overflow-hidden shadow-lg">
+          <p class="justify-between">this is the chain exposure pie chart</p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
